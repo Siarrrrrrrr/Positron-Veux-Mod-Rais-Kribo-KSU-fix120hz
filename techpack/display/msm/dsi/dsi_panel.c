@@ -18,6 +18,9 @@
 #include "sde_dsc_helper.h"
 #include "sde_vdc_helper.h"
 
+#ifdef CONFIG_KLAPSE
+#include <linux/klapse.h>
+#endif
 /**
  * topology is currently defined by a set of following 3 values:
  * 1. num of layer mixers
@@ -660,6 +663,9 @@ int dsi_panel_set_backlight(struct dsi_panel *panel, u32 bl_lvl)
 		DSI_ERR("Backlight type(%d) not supported\n", bl->type);
 		rc = -ENOTSUPP;
 	}
+	#ifdef CONFIG_KLAPSE
+	set_rgb_slider(bl_lvl);
+	#endif
 
 	/* Avoid using dimmed value when calculating doze mode */
 	if (bl_lvl && time_after(jiffies, last_stored + 6 * HZ)) {
