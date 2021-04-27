@@ -753,7 +753,8 @@ static ssize_t store_##file_name					\
 	unsigned long val;						\
 	int ret;							\
 
-	if (&policy->object == &policy->min)			\
+	if (&policy->object == &policy->min &&				\
+			is_battery_saver_on())						\
 		return count;						\
 									\
 	ret = sscanf(buf, "%lu", &val);					\
