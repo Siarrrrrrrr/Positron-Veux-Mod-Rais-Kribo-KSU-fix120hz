@@ -29,6 +29,7 @@
 #include <linux/suspend.h>
 #include <linux/syscore_ops.h>
 #include <linux/tick.h>
+#include <linux/battery_saver.h>
 #include <linux/sched/sysctl.h>
 #include <trace/events/power.h>
 
@@ -751,6 +752,10 @@ static ssize_t store_##file_name					\
 {									\
 	unsigned long val;						\
 	int ret;							\
+
+	if (&policy->object == &policy->min &&				\
+			is_battery_saver_on())				\
+		return count;						\
 									\
 	ret = sscanf(buf, "%lu", &val);					\
 	if (ret != 1)							\
