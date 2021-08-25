@@ -60,6 +60,7 @@ obj-$(CONFIG_HABANA_AI)		+= habanalabs/
 obj-$(CONFIG_AWINIC_HAPTIC_NV)	+= haptic_nv/
 obj-$(CONFIG_XILINX_SDFEC)	+= xilinx_sdfec.o
 obj-$(CONFIG_UID_SYS_STATS)	+= uid_sys_stats.o
+obj-$(CONFIG_BATTERY_SAVER) += battery_saver.o
 obj-$(CONFIG_QSEECOM)		+= qseecom-mod.o
 qseecom-mod-y			:= qseecom.o
 qseecom-mod-$(CONFIG_COMPAT)	+= compat_qseecom.o
