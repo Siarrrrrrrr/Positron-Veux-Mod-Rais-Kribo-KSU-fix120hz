@@ -813,6 +813,14 @@ config ARCH_HAS_PTE_SPECIAL
 config ARCH_HAS_HUGEPD
 	bool
 
+config LRU_GEN
+	bool "Multi-Gen LRU"
+	depends on MMU
+	# make sure page->flags has enough spare bits
+	depends on 64BIT || !SPARSEMEM || SPARSEMEM_VMEMMAP
+	help
+	  A high performance LRU implementation to overcommit memory.
+	  
 endmenu
 
 config PROCESS_RECLAIM
