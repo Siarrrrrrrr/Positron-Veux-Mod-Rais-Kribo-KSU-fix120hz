@@ -109,9 +109,9 @@ static unsigned int top_load[CLUSTER_MAX];
 static unsigned int curr_cap[CLUSTER_MAX];
 static bool max_cap_cpus[NR_CPUS];
 static atomic_t game_status_pid;
-static int touchboost = 1;
 #endif
 static bool ready_for_freq_updates;
+static int touchboost = 1;
 
 static int freq_qos_request_init(void)
 {
@@ -175,11 +175,13 @@ cleanup:
 /*******************************sysfs start************************************/
 static int set_touchboost(const char *buf, const struct kernel_param *kp)
 {
-	int val;
-	if (sscanf(buf, "%d\n", &val) != 1)
+	int cnt, val;
+	
+	cnt = sscanf(buf, "%d\n", &val);
+	if (cnt != 1)
 		return -EINVAL;
 	touchboost = val;
-	return 0;
+	return cnt;
 }
 
 static int get_touchboost(char *buf, const struct kernel_param *kp)
