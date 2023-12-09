@@ -15,6 +15,7 @@
 #include <linux/mm.h>
 #include <linux/qcom_scm.h>
 #include <asm/cacheflush.h>
+#include <drm/drm_refresh_rate.h>
 #include <linux/qtee_shmbridge.h>
 
 #include "../../devfreq/governor.h"
@@ -408,8 +409,14 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq)
 			priv->bin.busy_time > CEILING) {
 		val = -1 * level;
 	} else {
+		unsigned int refresh_rate = dsi_panel_get_refresh_rate();
+		// try fix 120 herez lcd red
+		if (refresh_rate > 60)
 		val = __secure_tz_update_entry3(level, priv->bin.total_time,
-			priv->bin.busy_time, context_count, priv);
+			priv->bin.busy_time, context_count, priv) * refresh_rate / 60;
+		else
+		val = __secure_tz_update_entry3(level, priv->bin.total_time,
+			priv->bin.busy_time, context_count, priv)
 	}
 
 	priv->bin.total_time = 0;
