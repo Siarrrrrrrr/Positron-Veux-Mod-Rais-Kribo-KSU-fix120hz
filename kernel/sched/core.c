@@ -1339,11 +1339,6 @@ static void __setscheduler_uclamp(struct task_struct *p,
 
 static void uclamp_fork(struct task_struct *p)
 {
-
-	#ifdef CONFIG_SCHED_BORE
-		fork_burst_penalty(p);
-	#endif // CONFIG_SCHED_BORE
-
 	enum uclamp_id clamp_id;
 
 	for_each_clamp_id(clamp_id)
