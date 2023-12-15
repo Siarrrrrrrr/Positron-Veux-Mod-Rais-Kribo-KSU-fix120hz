@@ -3252,6 +3252,10 @@ int sched_fork(unsigned long clone_flags, struct task_struct *p)
 	p->prio = current->normal_prio;
 	trace_android_rvh_prepare_prio_fork(p);
 
+	#ifdef CONFIG_SCHED_BORE
+		fork_burst_penalty(p);
+	#endif // CONFIG_SCHED_BORE
+
 	uclamp_fork(p);
 
 	/*
