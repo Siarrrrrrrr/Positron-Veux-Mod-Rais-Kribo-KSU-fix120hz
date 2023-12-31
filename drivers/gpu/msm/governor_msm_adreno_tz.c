@@ -375,7 +375,7 @@ static int tz_init(struct device *dev, struct devfreq_msm_adreno_tz_data *priv,
 }
 
 #ifdef CONFIG_ADRENO_IDLER
-extern int adreno_idler(struct devfreq_dev_status stats, struct devfreq *devfreq,
+extern int adreno_idler(struct devfreq_dev_status *stats, struct devfreq *devfreq,
                  unsigned long *freq);
 #endif
 
@@ -408,9 +408,9 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq)
 	}
 
 	/* Prevent overflow */
-	if (stats.busy_time >= (1 << 24) || stats.total_time >= (1 << 24)) {
-		stats.busy_time >>= 7;
-		stats.total_time >>= 7;
+	if (stats->busy_time >= (1 << 24) || stats->total_time >= (1 << 24)) {
+		stats->busy_time >>= 7;
+		stats->total_time >>= 7;
 	}
 
 	*freq = stats->current_frequency;
