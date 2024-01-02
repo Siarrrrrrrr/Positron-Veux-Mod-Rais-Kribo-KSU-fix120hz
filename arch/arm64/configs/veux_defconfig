@@ -1,5 +1,8 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# defconfig for KLAPSE
+CONFIG_KLAPSE=y
+######################################################
 # DEFCONFIG SBALANCE for veux
 CONFIG_IRQ_SBALANCE=y
 CONFIG_SBALANCE_EXCLUDE_CPUS="5,7"
