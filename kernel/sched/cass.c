@@ -179,8 +179,13 @@ static int cass_best_cpu(struct task_struct *p, int prev_cpu, bool sync)
 	return best->cpu;
 }
 
-static int cass_select_task_rq_fair(struct task_struct *p, int prev_cpu,
-				    int sd_flag, int wake_flags)
+static int
+#ifdef CONFIG_SCHED_WALT
+cass_select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_flags,
+		    int sibling_count_hint)
+#else
+cass_select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_flags)
+#endif
 {
 	bool sync;
 
