@@ -1,4 +1,15 @@
 CONFIG_LOCALVERSION="-lineageos"
+######################################################
+# CONFIG FRAME BUFFER
+CONFIG_HAS_IOMEM=y
+CONFIG_FB_CFB_FILLRECT=y
+CONFIG_FB_CFB_COPYAREA=y
+CONFIG_FB_CFB_IMAGEBLIT=y
+CONFIG_FB_CMDLINE=y
+CONFIG_FB_NOTIFY=y
+CONFIG_FB=y
+CONFIG_FB_SIMPLE=y
+######################################################
 CONFIG_NO_HZ=y
 CONFIG_HIGH_RES_TIMERS=y
 CONFIG_PREEMPT=y
