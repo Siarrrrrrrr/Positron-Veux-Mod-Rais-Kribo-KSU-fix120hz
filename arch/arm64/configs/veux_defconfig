@@ -1,5 +1,10 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# Le9 mm stuff
+CONFIG_ANON_MIN_KBYTES=393216
+CONFIG_CLEAN_LOW_KBYTES=393216
+CONFIG_CLEAN_MIN_KBYTES=196608
+######################################################
 #
 # Kernel Performance Events And Counters
 #
