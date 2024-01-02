@@ -1,5 +1,8 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# CONFIG SCHED BORE
+CONFIG_SCHED_BORE=y
+######################################################
 # Le9 mm stuff
 CONFIG_ANON_MIN_KBYTES=393216
 CONFIG_CLEAN_LOW_KBYTES=393216
