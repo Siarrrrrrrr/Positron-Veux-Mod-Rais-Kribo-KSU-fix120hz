@@ -1,5 +1,11 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# DEFCONFIG SBALANCE for veux
+CONFIG_IRQ_SBALANCE=y
+CONFIG_SBALANCE_EXCLUDE_CPUS="5,7"
+CONFIG_GENERIC_IRQ_EFFECTIVE_AFF_MASK=n
+CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=y
+######################################################
 # CONFIG SCHED BORE AND CASS
 CONFIG_SCHED_BORE=y
 CONFIG_SCHED_CASS=y
