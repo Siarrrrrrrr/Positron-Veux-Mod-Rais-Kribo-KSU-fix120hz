@@ -1,3 +1,23 @@
+Positron-Veux-Mod-Rais-Kribo-KSU
+
+Im using Google Clang
+
+wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz
+
+If u want use Kernelsu ad this first
+
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+
+FOr Script Compile u can use this one
+
+https://telegra.ph/Compile-Kernel-Veux--Rais-12-12
+
+For Download Kernel U can Use This One and search kernel what u need
+
+https://t.me/MrKriboChannel
+
+
+
 # How do I submit patches to Android Common Kernels
 
 1. BEST: Make all of your changes to upstream Linux. If appropriate, backport to the stable releases.
