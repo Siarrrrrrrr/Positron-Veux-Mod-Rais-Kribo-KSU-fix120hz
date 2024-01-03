@@ -1,6 +1,7 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
-# CONFIG POWERSUSPEND AND BATTERY SAVING
+# CONFIG POWERSUSPEND AND BATTERY SAVING AND DYNAMC FSYNC
+CONFIG_DYNAMIC_FSYNC=y
 CONFIG_BATTERY_SAVER=y
 CONFIG_POWERSUSPEND=y
 ######################################################
