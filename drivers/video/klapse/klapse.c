@@ -10,6 +10,7 @@
 #include <linux/rtc.h>
 #include <linux/timer.h>
 #include <linux/klapse.h>
+#include <linux/timekeeping.h>
 
 /* Tunables */
 static unsigned short enabled = DEFAULT_ENABLE;
@@ -220,7 +221,11 @@ static void pulse(struct timer_list *data)
 	int backtime;
 
 	// Get time
-	do_gettimeofday(&time);
+	// do_gettimeofday(&time);
+
+	struct timespec64 time;
+	ktime_get_real_ts64(&time);
+
 	local_time = (u32)(time.tv_sec - (sys_tz.tz_minuteswest * 60));
 	rtc_time_to_tm(local_time, &tm);
 
