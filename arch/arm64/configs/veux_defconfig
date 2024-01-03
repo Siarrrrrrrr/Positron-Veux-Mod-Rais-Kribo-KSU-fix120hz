@@ -1,5 +1,8 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# CONFIG POWERSUSPEND
+CONFIG_POWERSUSPEND=y
+######################################################
 # defconfig for KLAPSE
 CONFIG_KLAPSE=y
 ######################################################
