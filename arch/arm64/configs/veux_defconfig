@@ -1,6 +1,7 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
-# CONFIG POWERSUSPEND
+# CONFIG POWERSUSPEND AND BATTERY SAVING
+CONFIG_BATTERY_SAVER=y
 CONFIG_POWERSUSPEND=y
 ######################################################
 # defconfig for KLAPSE
