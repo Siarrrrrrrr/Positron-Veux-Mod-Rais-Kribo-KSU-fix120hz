@@ -1,5 +1,9 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# enable adreno driver idle
+CONFIG_BFQ_GROUP_IOSCHED=y
+CONFIG_ADRENO_IDLER=y
+######################################################
 # CONFIG INTERNET
 CONFIG_TCP_CONG_BBR=y
 CONFIG_TCP_CONG_BBRPLUS=y
