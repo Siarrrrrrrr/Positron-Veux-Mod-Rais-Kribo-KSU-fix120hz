@@ -752,7 +752,7 @@ static ssize_t store_##file_name					\
 {									\
 	unsigned long val;						\
 	int ret;							\
-
+														\
 	if (&policy->object == &policy->min &&				\
 			is_battery_saver_on())						\
 		return count;						\
