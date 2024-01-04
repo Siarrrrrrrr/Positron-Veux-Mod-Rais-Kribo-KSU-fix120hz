@@ -7,7 +7,8 @@
 #define __KGSL_PWRSCALE_H
 
 #include "kgsl_pwrctrl.h"
-#include "msm_adreno_devfreq.h"
+// #include "msm_adreno_devfreq.h"
+#include <linux/msm_adreno_devfreq.h>
 
 /* devfreq governor call window in usec */
 #define KGSL_GOVERNOR_CALL_INTERVAL 10000

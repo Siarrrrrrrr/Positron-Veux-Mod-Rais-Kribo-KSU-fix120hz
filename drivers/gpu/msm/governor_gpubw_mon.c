@@ -8,7 +8,8 @@
 #include <linux/slab.h>
 
 #include "../../devfreq/governor.h"
-#include "msm_adreno_devfreq.h"
+// #include "msm_adreno_devfreq.h"
+#include <linux/msm_adreno_devfreq.h>
 
 #define MIN_BUSY                1000
 #define LONG_FLOOR              50000

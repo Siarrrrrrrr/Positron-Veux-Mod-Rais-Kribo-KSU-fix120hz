@@ -19,7 +19,8 @@
 #include <linux/qtee_shmbridge.h>
 
 #include "../../devfreq/governor.h"
-#include "msm_adreno_devfreq.h"
+// #include "msm_adreno_devfreq.h"
+#include <linux/msm_adreno_devfreq.h>
 
 static DEFINE_SPINLOCK(tz_lock);
 static DEFINE_SPINLOCK(sample_lock);
