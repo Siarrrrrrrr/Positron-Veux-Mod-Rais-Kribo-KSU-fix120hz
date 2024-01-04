@@ -622,7 +622,7 @@ rate_limit_us_store(struct gov_attr_set *attr_set, const char *buf, size_t count
 	list_for_each_entry(sg_policy, &attr_set->policy_list, tunables_hook)
 		sg_policy->freq_update_delay_ns = rate_limit_us * NSEC_PER_USEC;
 
-	if (task_is_booster(current))
+	// if (task_is_booster(current))
 	return count;
 }
 
