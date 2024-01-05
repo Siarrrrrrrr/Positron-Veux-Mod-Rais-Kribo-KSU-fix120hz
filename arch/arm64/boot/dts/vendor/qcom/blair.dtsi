@@ -3474,7 +3474,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <860000000>;
+				qcom,gpu-freq = <855000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
@@ -3565,7 +3565,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <860000000>;
+				qcom,gpu-freq = <855000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
@@ -3644,7 +3644,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;
-				qcom,gpu-freq = <860000000>;
+				qcom,gpu-freq = <855000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
