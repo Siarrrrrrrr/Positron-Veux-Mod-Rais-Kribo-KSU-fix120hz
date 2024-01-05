@@ -3363,7 +3363,7 @@
 
 &L2E {
 	regulator-min-microvolt = <352000>;
-	regulator-max-microvolt = <896000>;
+	regulator-max-microvolt = <796000>;
 };
 
 &L3E {
@@ -3371,7 +3371,7 @@
 };
 
 &L7E {
-	regulator-max-microvolt = <4544000>;
+	regulator-max-microvolt = <3544000>;
 };
 
 &gcc_camss_top_gdsc {
@@ -3473,7 +3473,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <851000000>;
+				qcom,gpu-freq = <850000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
@@ -3564,7 +3564,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <851000000>;
+				qcom,gpu-freq = <850000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
@@ -3643,7 +3643,7 @@
 			/* TURBO */
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;
-				qcom,gpu-freq = <851000000>;
+				qcom,gpu-freq = <850000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
 				qcom,bus-freq-ddr7 = <8>;
