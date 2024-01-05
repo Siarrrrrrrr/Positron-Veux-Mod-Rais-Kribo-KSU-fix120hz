@@ -3363,7 +3363,7 @@
 
 &L2E {
 	regulator-min-microvolt = <352000>;
-	regulator-max-microvolt = <796000>;
+	regulator-max-microvolt = <896000>;
 };
 
 &L3E {
@@ -3371,7 +3371,7 @@
 };
 
 &L7E {
-	regulator-max-microvolt = <3544000>;
+	regulator-max-microvolt = <4544000>;
 };
 
 &gcc_camss_top_gdsc {
@@ -3455,8 +3455,8 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 			qcom,speed-bin = <0>;
-			qcom,ca-target-pwrlevel = <5>;
-			qcom,initial-pwrlevel = <6>;
+			qcom,ca-target-pwrlevel = <6>;
+			qcom,initial-pwrlevel = <7>;
 
 			/* TURBO_L1 */
 			qcom,gpu-pwrlevel@0 {
@@ -3468,15 +3468,16 @@
 				qcom,bus-min-ddr7 = <8>;
 				qcom,bus-max-ddr7 = <9>;
 			};
+			// This TURBO_L1 not for Veux, soo forget about that 
 
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <840000000>;
+				qcom,gpu-freq = <882000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
-				qcom,bus-freq-ddr7 = <8>;
-				qcom,bus-min-ddr7 = <7>;
+				qcom,bus-freq-ddr7 = <9>;
+				qcom,bus-min-ddr7 = <8>;
 				qcom,bus-max-ddr7 = <9>;
 
 			};
@@ -3545,8 +3546,8 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 			qcom,speed-bin = <190>;
-			qcom,ca-target-pwrlevel = <5>;
-			qcom,initial-pwrlevel = <6>;
+			qcom,ca-target-pwrlevel = <6>;
+			qcom,initial-pwrlevel = <7>;
 
 			/* TURBO_L1 */
 			qcom,gpu-pwrlevel@0 {
@@ -3558,15 +3559,16 @@
 				qcom,bus-min-ddr7 = <8>;
 				qcom,bus-max-ddr7 = <9>;
 			};
+			// TURBO_L1 not for veux, soo lets forget about that
 
 			/* TURBO */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
-				qcom,gpu-freq = <840000000>;
+				qcom,gpu-freq = <882000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
-				qcom,bus-freq-ddr7 = <8>;
-				qcom,bus-min-ddr7 = <7>;
+				qcom,bus-freq-ddr7 = <9>;
+				qcom,bus-min-ddr7 = <8>;
 				qcom,bus-max-ddr7 = <9>;
 
 			};
@@ -3635,17 +3637,17 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 			qcom,speed-bin = <177>;
-			qcom,ca-target-pwrlevel = <4>;
-			qcom,initial-pwrlevel = <5>;
+			qcom,ca-target-pwrlevel = <5>;
+			qcom,initial-pwrlevel = <6>;
 
 			/* TURBO */
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;
-				qcom,gpu-freq = <840000000>;
+				qcom,gpu-freq = <882000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
-				qcom,bus-freq-ddr7 = <8>;
-				qcom,bus-min-ddr7 = <7>;
+				qcom,bus-freq-ddr7 = <9>;
+				qcom,bus-min-ddr7 = <8>;
 				qcom,bus-max-ddr7 = <9>;
 
 			};
