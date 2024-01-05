@@ -203,7 +203,7 @@ static const struct freq_tbl ftbl_gpu_cc_gx_gfx3d_clk_src[] = {
 	F(650000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0),
 	F(700000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0),
 	F(770000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0),
-	F(855000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0),
+	F(854000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0),
 	F(900000000, P_GPU_CC_PLL0_OUT_EVEN, 2, 0, 0), // Not For Veux
 	{ }
 };
@@ -231,7 +231,7 @@ static struct clk_rcg2 gpu_cc_gx_gfx3d_clk_src = {
 			[VDD_LOW_L1] = 490000000,
 			[VDD_NOMINAL] = 650000000,
 			[VDD_NOMINAL_L1] = 770000000,
-			[VDD_HIGH] = 855000000,
+			[VDD_HIGH] = 854000000,
 			[VDD_HIGH_L1] = 900000000},
 	},
 };
@@ -386,7 +386,7 @@ static struct clk_branch gpu_cc_gx_gfx3d_clk = {
 				[VDD_LOW_L1] = 490000000,
 				[VDD_NOMINAL] = 650000000,
 				[VDD_NOMINAL_L1] = 770000000,
-				[VDD_HIGH] = 855000000,
+				[VDD_HIGH] = 854000000,
 				[VDD_HIGH_L1] = 900000000},
 		},
 	},
