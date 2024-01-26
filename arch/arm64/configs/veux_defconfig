@@ -1,5 +1,8 @@
 CONFIG_LOCALVERSION="-lineageos"
 ######################################################
+# CONFIG KSU
+CONFIG_KSU=n
+######################################################
 # enable adreno driver idle
 CONFIG_BFQ_GROUP_IOSCHED=y
 CONFIG_ADRENO_IDLER=y
