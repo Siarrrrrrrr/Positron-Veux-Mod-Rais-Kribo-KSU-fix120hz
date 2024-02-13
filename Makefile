@@ -764,8 +764,8 @@ KBUILD_CFLAGS += -Os
 endif
 
 # tell to compiler for spesific procesor
-KBUILD_CFLAGS += -march=armv8-a+crc+crypto -mcpu=cortex-a75 -mtune=cortex-a55
-KBUILD_AFLAGS += -march=armv8-a+crc+crypto -mcpu=cortex-a75 -mtune=cortex-a55
+KBUILD_CFLAGS += -march=armv8-a+crc+crypto -mcpu=cortex-a78 -mtune=cortex-a55
+KBUILD_AFLAGS += -march=armv8-a+crc+crypto -mcpu=cortex-a78 -mtune=cortex-a55
 
 # Tell gcc to never replace conditional load with a non-conditional one
 KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
