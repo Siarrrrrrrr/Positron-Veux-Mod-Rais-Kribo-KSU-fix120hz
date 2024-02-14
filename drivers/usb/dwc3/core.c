@@ -1819,8 +1819,6 @@ static int dwc3_probe(struct platform_device *pdev)
 	dwc3_debugfs_init(dwc);
 
 	ret = dwc3_core_init_mode(dwc);
-	if (ret)
-		goto err5;
 
 	pm_runtime_put(dev);
 
