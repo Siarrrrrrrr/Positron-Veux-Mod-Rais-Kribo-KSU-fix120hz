@@ -1790,8 +1790,6 @@ static const struct rpmsg_endpoint_ops glink_endpoint_ops = {
 static void qcom_glink_rpdev_release(struct device *dev)
 {
 	struct rpmsg_device *rpdev = to_rpmsg_device(dev);
-
-	channel->rpdev = NULL;
 	kfree(rpdev->driver_override);
 	kfree(rpdev);
 }
