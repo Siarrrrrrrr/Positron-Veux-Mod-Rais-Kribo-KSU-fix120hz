@@ -1,4 +1,10 @@
 CONFIG_LOCALVERSION="-lineageos"
+############################################
+# KPROBES KSU
+CONFIG_KPROBES=y
+CONFIG_HAVE_KPROBES=y
+CONFIG_KPROBE_EVENTS=y
+############################################
 CONFIG_IRQ_SBALANCE=y
 CONFIG_SBALANCE_EXCLUDE_CPUS="3,6,7"
 CONFIG_KLAPSE=y
