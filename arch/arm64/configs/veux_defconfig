@@ -1,5 +1,8 @@
 CONFIG_LOCALVERSION="-lineageos"
 ############################################
+# zram sizedisk, 1/2 zram from ram 8  GB
+CONFIG_ZRAM_SIZE_OVERRIDE=4
+############################################
 # KPROBES 
 CONFIG_KSU=n
 CONFIG_KPROBES=y
