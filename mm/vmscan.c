@@ -112,7 +112,7 @@ struct scan_control {
 	/* help kswapd make better choices among multiple memcgs */
 	unsigned int memcgs_need_aging:1;
 	unsigned long last_reclaimed;
-#
+#endif
 
 	/* The anonymous pages on the current node are below vm.anon_min_kbytes */
 	unsigned int anon_below_min:1;
