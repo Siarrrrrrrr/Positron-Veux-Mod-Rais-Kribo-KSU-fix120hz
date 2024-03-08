@@ -1,6 +1,7 @@
 CONFIG_LOCALVERSION="-lineageos"
 ############################################
-# KPROBES KSU
+# KPROBES 
+CONFIG_KSU=n
 CONFIG_KPROBES=y
 CONFIG_HAVE_KPROBES=y
 CONFIG_KPROBE_EVENTS=y
