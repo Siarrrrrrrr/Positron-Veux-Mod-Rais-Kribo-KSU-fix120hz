@@ -141,7 +141,6 @@ msm_drm-$(CONFIG_DRM_MSM) += \
 	msm_cooling_device.o \
 	msm_prop.o
 
-<<<<<<< HEAD
 msm_drm-$(CONFIG_HDCP_QSEECOM) += ../hdcp/msm_hdcp.o \
 
 msm_drm-$(CONFIG_MSM_SDE_ROTATOR) += ../rotator/sde_rotator_dev.o \
@@ -162,11 +161,10 @@ msm_drm-$(CONFIG_MSM_SDE_ROTATOR) += ../rotator/sde_rotator_dev.o \
 	../rotator/sde_rotator_r3_debug.o
 
 obj-$(CONFIG_DISPLAY_BUILD)	+= msm_drm.o
-=======
+
 msm_drm-$(CONFIG_DRM_MSM) += \
 	mi_disp/mi_dsi_display.o \
 
 obj-$(CONFIG_DRM_MSM)	+= msm_drm.o
->>>>>>> 819539ba0a5d (makefile : for mi display dynamic refresh rate)
 
 obj-$(CONFIG_DRM_FBDEV_EMULATION) += msm_fbdev.o
