@@ -26,7 +26,7 @@ CONFIG_HAVE_KPROBES=y
 CONFIG_KPROBE_EVENTS=y
 ############################################
 CONFIG_IRQ_SBALANCE=y
-CONFIG_SBALANCE_EXCLUDE_CPUS="3,6,7"
+CONFIG_SBALANCE_EXCLUDE_CPUS="3,4,5,7"
 CONFIG_SCHED_BORE=y
 ###########################################
 CONFIG_KLAPSE=y
