@@ -1,5 +1,9 @@
 CONFIG_LOCALVERSION="-lineageos"
 ############################################
+# power efficient
+CONFIG_PM=y
+CONFIG_WQ_POWER_EFFICIENT_DEFAULT=y
+############################################
 # UKSM
 CONFIG_KSM=y
 CONFIG_UKSM=y
