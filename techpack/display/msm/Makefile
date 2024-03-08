@@ -165,6 +165,4 @@ obj-$(CONFIG_DISPLAY_BUILD)	+= msm_drm.o
 msm_drm-$(CONFIG_DRM_MSM) += \
 	mi_disp/mi_dsi_display.o \
 
-obj-$(CONFIG_DRM_MSM)	+= msm_drm.o
-
 obj-$(CONFIG_DRM_FBDEV_EMULATION) += msm_fbdev.o
