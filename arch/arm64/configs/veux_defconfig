@@ -1,5 +1,10 @@
 CONFIG_LOCALVERSION="-lineageos"
 ############################################
+# le9
+CONFIG_ANON_MIN_KBYTES=393216
+CONFIG_CLEAN_LOW_KBYTES=393216
+CONFIG_CLEAN_MIN_KBYTES=196608
+############################################
 # zram sizedisk, 1/2 zram from ram 8  GB
 CONFIG_ZRAM_SIZE_OVERRIDE=4
 ############################################
