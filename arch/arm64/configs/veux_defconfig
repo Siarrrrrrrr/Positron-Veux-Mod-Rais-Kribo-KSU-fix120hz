@@ -1,5 +1,9 @@
 CONFIG_LOCALVERSION="-lineageos"
 ############################################
+# UKSM
+CONFIG_KSM=y
+CONFIG_UKSM=y
+############################################
 # le9
 CONFIG_ANON_MIN_KBYTES=393216
 CONFIG_CLEAN_LOW_KBYTES=393216
